@@ -70,14 +70,11 @@ form.addEventListener('submit', (e) => {
   const projectTitle = projectTitleInput.value.trim();
   const projectDescription = projectDescriptionInput.value.trim();
 
-  const words = projectDescription.trim().split(/\s+/);
-
   if (
     name &&
     projectType &&
     projectTitle &&
     projectDescription &&
-    words.length > 50
   ) {
     const idea = {
       name,
@@ -91,7 +88,7 @@ form.addEventListener('submit', (e) => {
     form.reset();
   } else {
     console.error(
-      'All fields are required to submit an idea, And description must be 50 words or higher'
+      'All fields are required to submit an idea.'
     );
   }
 });
