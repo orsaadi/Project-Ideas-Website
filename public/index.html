@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Project Idea Submission</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">Project Idea Submission</h1>
+        <p class="header__subtitle">
+          Share your innovative ideas for software, websites, and more!
+        </p>
+      </div>
+    </header>
+
+    <main class="main container">
+      <section class="idea-form">
+        <h2 class="idea-form__title">Submit Your Idea</h2>
+        <form
+          id="projectForm"
+          class="idea-form__form"
+        >
+          <div class="form-group">
+            <label
+              for="name"
+              class="form-group__label"
+              >Your Name:</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-group__input"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label
+              for="email"
+              class="form-group__label"
+              >Your Email:</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-group__input"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label
+              for="projectType"
+              class="form-group__label"
+              >Project Type:</label
+            >
+            <select
+              id="projectType"
+              name="projectType"
+              class="form-group__select"
+              required
+            >
+              <option value="">Select a type</option>
+              <option value="software">Software</option>
+              <option value="website">Website</option>
+              <option value="mobile-app">Mobile App</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label
+              for="projectTitle"
+              class="form-group__label"
+              >Project Title:</label
+            >
+            <input
+              type="text"
+              id="projectTitle"
+              name="projectTitle"
+              class="form-group__input"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label
+              for="projectDescription"
+              class="form-group__label"
+              >Project Description:</label
+            >
+            <textarea
+              id="projectDescription"
+              name="projectDescription"
+              class="form-group__textarea"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="form-group__button"
+          >
+            Submit Idea
+          </button>
+        </form>
+      </section>
+
+      <section
+        class="ideas-list"
+        id="ideas-list"
+      ></section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
