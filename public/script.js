@@ -1,5 +1,6 @@
 const socket = new WebSocket('wss://project-ideas-website-szhh.vercel.app');
 
+
 const nameInput = document.getElementById('name');
 const projectTypeInput = document.getElementById('projectType');
 const projectTitleInput = document.getElementById('projectTitle');
